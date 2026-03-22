@@ -49,6 +49,13 @@
 
 > **알림:** 현재 drawNET은 **Alpha 버전**으로, 기능 검증 및 안정화 단계에 있습니다. 정식 버전(v1.0) 출시 전까지 모든 기능에 대한 가격 정책은 변경될 수 있으며, 알파 테스터에게는 추후 특별 혜택이 제공될 예정입니다.
 
+### 🔑 Alpha 테스트용 공용 라이선스 키
+알파 기간 동안 모든 기능을 자유롭게 테스트해 보실 수 있도록 공용 라이선스 키를 제공합니다. 시스템 메뉴의 **라이선스 관리** 탭에서 아래 키를 입력해 주세요.
+
+```text
+sP7nmTe1FXAcgki0hYVq4xxH2egDNBx2h4ZSdyS2s8inc9WA7W8MNRKWTsDZDj2BvnbdmVgfLuF76koFf3OvXPY6Mygvt76HBnWOd4sCGXPdAsFNaivCqWQP/lDUa6ruvVmtnajcGMWr4zqL/GfvEtHMrGa718CV1L/rYsy86eTRiUzMZe4rZ17V7uolq9hUtA2vIsli9qUIPZ0w9Gz9aIsJwgUbcW0lOAU6RYeVGinulMsWmGicS+AZl396FKvh0qp6on/yLw93QnbetEZ81GYUIESMv3DZslATCCzjb58fVJFSrZwdmvkq82pRY6wYPyOSPX0Fn7/AUMt+Fccxq9au8FrKeHgvd+gjY+k1KmOcT9QL6fK6ZbA8AR7e1gNCua1UvVlBApGnbnr7TStrVxRcH4n9Hl69JmWhEJpxHJ5VYrLHf9tcpti7ISHJGo6CyC1otr1/S0Io/QZFhZPqpGFBw93E/u2YiUG3Edud86exRo6IfFzaG8C5qG8UFkG0UcXU5JUmGBKt3gpr57vYLCH+AQWhY0D0O92N8G0hweWtXt5uVDWFtkFN9EWelEkSQ25uq1rcNZLdSBBwLpVkaa+ri8OIx6cekHs7a26ukbhAizYMSN2pkT3xFMfj5gVTtPl/HImzkSMXU2/PhRGixlZ5t2elsIMitqmal+KRB2B7Imh3aWQiOiAiVU5JVkVSU0FMIiwgImxldmVsIjogIkJhc2ljIiwgImxwaXJ5IjogIjIwMjYtMDQtMzAiLCAiaXNzdWVkIjogIjIwMjYtMDMtMjIifQ==
+```
+
 ---
 
 ## 📥 설치 및 실행
@@ -78,6 +85,7 @@ python app.py
 drawNET은 개발자의 열정으로 만들어지고 있습니다. 이 프로젝트가 마음에 드셨다면 커피 한 잔의 여유를 선물해 주세요! 후원금은 서버 유지비와 기능 개발에 소중히 사용됩니다.
 
 - **Ko-fi 후원:** [https://ko-fi.com/leeyj78](https://ko-fi.com/leeyj78)
+- **문의 및 제안:** [leeyj78@gmail.com](mailto:leeyj78@gmail.com)
 - **버그 제보:** [Issues](https://github.com/leeyj78/drawNET/issues) (Docs 참고)
 
 ---
@@ -85,4 +93,4 @@ drawNET은 개발자의 열정으로 만들어지고 있습니다. 이 프로젝
 ## ⚖️ License
 
 Copyright © 2026 drawNET Team. All Rights Reserved.
-개인 사용자는 Community 라이선스로 시작하실 수 있으며, 기업 및 상업적 목적의 경우 원격 라이선스 활성화가 필요합니다.
+개인 사용자는 Community 라이선스로 시작하실 수 있으며, 기업 및 상업적 목적의 경우 원격 라이선스 활성화가 필요합니다. 상용 라이선스 관련 문의는 상기 이메일로 연락 주시기 바랍니다.
