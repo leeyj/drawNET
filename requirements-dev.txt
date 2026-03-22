@@ -1,0 +1,4 @@
+# Development Dependencies for drawNET
+# Required for compiling Python to binary (.pyd/.so)
+Cython>=3.0.0
+setuptools>=68.0.0

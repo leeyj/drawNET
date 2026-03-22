@@ -1,0 +1,349 @@
+/* 
+   drawNET Premium CSS Manifest
+   This file imports modules to keep the production bundle organized.
+*/
+
+@import "modules/base.css";
+@import "modules/sidebar.css";
+@import "modules/sidebar_footer.css";
+@import "modules/assets.css";
+@import "modules/flyout.css";
+@import "modules/header.css";
+@import "modules/editor.css";
+@import "modules/layout.css";
+@import "modules/animations.css";
+@import "modules/modal.css";
+@import "modules/settings_panel.css";
+@import "modules/properties_sidebar.css";
+
+/* Floating Context Menu */
+.floating-menu {
+    background: rgba(30, 41, 59, 0.85); /* Slate 800-ish with glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    padding: 6px;
+    min-width: 180px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.menu-item {
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #f1f5f9;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:hover {
+    background: #3b82f6; /* Blue 500 */
+    color: white;
+    transform: translateY(-1px);
+}
+
+.menu-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 6px 0;
+}
+
+.menu-label {
+    padding: 6px 14px 4px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.menu-icon-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px;
+    gap: 4px;
+}
+
+.icon-btn {
+    flex: 1;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #94a3b8;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+.icon-btn:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+.icon-btn i.fa-rotate-90 {
+    transform: rotate(90deg);
+}
+
+/* --- X6 Port Styles --- */
+.x6-port {
+    visibility: hidden;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.x6-node:hover .x6-port {
+    visibility: visible;
+}
+
+.x6-port circle {
+    cursor: crosshair;
+}
+
+.x6-port circle:hover {
+    fill: #3b82f6 !important;
+    r: 6 !important;
+}
+
+/* --- X6 Edge Selection Highlight --- */
+.x6-edge-selected path {
+    stroke: #3b82f6 !important;
+    stroke-width: 3px !important;
+    filter: drop-shadow(0 0 3px rgba(59, 130, 246, 0.8));
+    transition: all 0.2s ease;
+}
+
+/* Flow animation for selected flow lines */
+.x6-edge-selected.flow-animation path {
+    stroke-width: 4px !important;
+}
+
+/* Mini buttons for editor actions */
+.footer-btn.mini {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 11px;
+    height: 28px;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    color: #3b82f6;
+    border-radius: 6px;
+    margin-left: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+}
+
+.footer-btn.mini:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+/* --- Export Loading Overlay --- */
+.export-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.65); /* Slate 900 with transparency */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    color: white;
+    font-family: inherit;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.export-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-left-color: #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+.export-text {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* --- License Management UI --- */
+.license-status-card {
+    background: rgba(30, 41, 59, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    margin: 16px 0 24px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.edition-label {
+    font-size: 10px;
+    font-weight: 800;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.edition-name {
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.status-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.status-icon.valid {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+}
+
+.status-icon.expired {
+    background: linear-gradient(135deg, #475569 0%, #1e293b 100%);
+    color: #94a3b8;
+}
+
+.hwid-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hwid-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #cbd5e1;
+}
+
+.text-link-btn {
+    background: none;
+    border: none;
+    color: #3b82f6;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.text-link-btn:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.hwid-value-box {
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 10px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.hwid-value-box code {
+    font-family: 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 13px;
+    color: #3b82f6;
+    word-break: break-all;
+    width: 100%;
+}
+
+.license-action-section {
+    margin-top: 20px;
+}
+
+.key-input-wrapper textarea {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #f1f5f9;
+    padding: 12px;
+    font-family: monospace;
+    font-size: 12px;
+    resize: none;
+    margin-bottom: 12px;
+    transition: all 0.2s;
+}
+
+.key-input-wrapper textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.primary-btn-premium {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.primary-btn-premium:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.primary-btn-premium:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

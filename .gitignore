@@ -1,0 +1,54 @@
+# drawNET Git Ignore Profile (Updated 2026-03-22)
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- DrawNET Specific Exclusions ---
+/tools/
+/test/
+/tmp/
+/archive/
+/scratch/
+package.bat
+drawNET_distribution_*.zip
+
+# --- Security & Secrets (CRITICAL) ---
+.env
+*.lic
+*.pem
+private_key*
+*key.pem
+license.lic
+
+# --- IDE & System ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.agent/
+.gemini/
+
+# --- Assets & Cache ---
+static/assets/packs/*/temp_*.png
+static/assets/packs/*/temp_*.svg
