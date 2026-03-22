@@ -2,6 +2,14 @@
 # drawNET - High-Precision Network Architecture Design Tool for Engineers
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Version-v1.0.0--alpha-blue" alt="Version">
+  <img src="https://img.shields.io/badge/Python-3.9%2B-green" alt="Python">
+  <img src="https://img.shields.io/badge/i18n-KO%20%2F%20EN-orange" alt="i18n">
+  <img src="https://img.shields.io/badge/License-Proprietary-red" alt="License">
+  <a href="https://ko-fi.com/leeyj78"><img src="https://img.shields.io/badge/Support-Ko--fi-blueviolet?logo=kofi&logoColor=white" alt="Support"></a>
+</p>
+
+<p align="center">
   <img src="./image/logo.png" alt="drawNET Logo" width="180">
 </p>
 
