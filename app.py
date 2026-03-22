@@ -17,7 +17,14 @@ def create_app():
     app.register_blueprint(main_bp)
     app.register_blueprint(api_bp)
     
+    # Diagnostic: Check if loaded from source or binary
+    import routes.api_routes as ar
+    import logic.license_manager as lm
+    print(f"[*] API Routes Loaded From: {ar.__file__}")
+    print(f"[*] License Manager Loaded From: {lm.__file__}")
+    
     return app
+
 
 if __name__ == '__main__':
     app = create_app()
