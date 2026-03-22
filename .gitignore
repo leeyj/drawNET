@@ -4,9 +4,14 @@
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-*.pyd
+# *.so  <-- Allow binaries for deployment
+# *.pyd <-- Allow binaries for deployment
 .Python
+
+# --- Compiled Source Protection ---
+routes/api_routes.py
+logic/license_manager.py
+
 env/
 build/
 develop-eggs/
